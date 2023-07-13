@@ -1,0 +1,29 @@
+package:
+  name: toxfinder
+  version: 1.0.0
+
+source:
+  url: https://bitbucket.org/genomicepidemiology/toxfinder/get/1.0.0.tar.gz
+
+build:
+  number: 0
+  noarch: generic
+
+requirements:
+  host:
+    - python>=3.5
+    - kma
+    - wget
+  run:
+    - python>=3.5
+    - kma
+    - biopython
+    - ete3
+    - tabulate
+    - cgecore
+    - blast
+
+about:
+  home: https://bitbucket.org/genomicepidemiology/toxfinder
+  summary: 'ToxFinder service.'
+  license: Apache-2.0
